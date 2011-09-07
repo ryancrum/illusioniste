@@ -1,4 +1,5 @@
 (ns illusioniste
+  "Wrapper over im4java, a Java ImageMagick wrapper."
   (:import [org.im4java.core IMOperation ConvertCmd]
            [org.im4java.process Pipe]
            [java.io ByteArrayOutputStream ByteArrayInputStream]
@@ -30,7 +31,9 @@
        (.close input-stream)
        (.close output-stream)))))
 
-(defmacro transform-image [image & body]
+(defmacro transform-image
+  "Perform a series of transformations on the given image."
+  [image & body]
   `(image-operation ~image
                     (fn [op#]
                       (-> op#
