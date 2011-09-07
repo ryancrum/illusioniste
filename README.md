@@ -7,14 +7,15 @@ A (very) thin wrapper over im4java, a wrapper over ImageMagick's command-line ut
     (illusioniste/transform-image image-byte-array
       (rotate 90.0)
       (crop 140 100)
-      (resize 80 80)) ;; -> byte array of image rotated 90 degrees,
-                      ;;    cropped to 140x100
-                      ;;    and subsequently resized to 80x80
+      (resize 80 80)) ;; returns jpeg byte array rotated 90 degrees,
+                      ;;   cropped to 140x100
+                      ;;   and subsequently resized to 80x80
 
 ## Todo
 
 * Some helpers to get images into and out of byte-arrays
 * Support more than simple convert calls (composite, etc.)
+* Support more formats than JPEG
 
 ## License
 
