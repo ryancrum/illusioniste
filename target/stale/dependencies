@@ -1,0 +1,1 @@
+([:dependencies [[org.clojure/clojure "1.4.0"] [org.im4java/im4java "1.2.0"]]])
