@@ -6,6 +6,13 @@ This fork changed exactly two lines which were giving me trouble. Now supports f
 
 ## Usage
 
+Add The following to your project.clj
+    [org.clojars.jjttjj/illusioniste "1.0.0-SNAPSHOT"]
+ 
+    
+    (ns example.core
+      (:require [illusioniste.core :as illusioniste]))
+
     (illusioniste/transform-image image-byte-array
       (rotate 90.0)
       (crop 140 100)
