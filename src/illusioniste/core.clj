@@ -1,4 +1,4 @@
-(ns illusioniste
+(ns illusioniste.core
   "Wrapper over im4java, a Java ImageMagick wrapper."
   (:import [org.im4java.core IMOperation ConvertCmd]
            [org.im4java.process Pipe]
@@ -9,7 +9,7 @@
   (-> (IMOperation.)
       (.addImage (into-array String ["-"]))
       fn
-      (.addImage (into-array String ["jpeg:-"]))))
+      (.addImage (into-array String ["-"]))))
 
 (defn- piped-command [input output]
   (let [pipe-in (Pipe. input nil)
@@ -19,12 +19,12 @@
     (.setOutputConsumer cmd pipe-out)
     cmd))
 
-(defn- image-operation [input fn]
+(defn image-operation [input fn]
   (let [output-stream (ByteArrayOutputStream.)
         input-stream (ByteArrayInputStream. input)
         cmd (piped-command input-stream output-stream)
         op (piped-operation fn)]
-    (try 
+    (try
       (.run cmd op (into-array []))
       (.toByteArray output-stream)
       (finally
