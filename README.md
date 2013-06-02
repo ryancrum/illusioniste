@@ -7,9 +7,8 @@ This fork changed exactly two lines which were giving me trouble. Now supports f
 ## Usage
 
 Add The following to your project.clj
-    [org.clojars.jjttjj/illusioniste "1.0.0-SNAPSHOT"]
- 
-    
+    [rtircher.illusioniste "1.0.1"]
+
     (ns example.core
       (:require [illusioniste.core :as illusioniste]))
 
@@ -27,5 +26,4 @@ Add The following to your project.clj
 
 ## License
 
-Copyright &copy; 2011 Ryan Crum
 Distributed under the Eclipse Public License. See LICENSE.
