@@ -7,7 +7,7 @@ This fork changed exactly two lines which were giving me trouble. Now supports f
 ## Usage
 
 Add The following to your project.clj
-    [rtircher.illusioniste "1.0.1"]
+    [illusioniste "1.0.1-SNAPSHOT"]
 
     (ns example.core
       (:require [illusioniste.core :as illusioniste]))
