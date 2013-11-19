@@ -1,4 +1,4 @@
-(ns illusioniste.core
+(ns illusioniste
   "Wrapper over im4java, a Java ImageMagick wrapper."
   (:import [org.im4java.core IMOperation ConvertCmd]
            [org.im4java.process Pipe]
