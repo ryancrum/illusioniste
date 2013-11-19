@@ -2,15 +2,13 @@
 
 A (very) thin wrapper over im4java, a wrapper over ImageMagick's command-line utilities. This is literally nothing more than a small macro.
 
-This fork changed exactly two lines which were giving me trouble. Now supports formats other than Jpeg.
-
 ## Usage
 
 Add The following to your project.clj
     [illusioniste "1.0.1-SNAPSHOT"]
 
     (ns example.core
-      (:require [illusioniste.core :as illusioniste]))
+      (:require [illusioniste]))
 
     (illusioniste/transform-image image-byte-array
       (rotate 90.0)
@@ -25,5 +23,5 @@ Add The following to your project.clj
 * Support more than simple convert calls (composite, etc.)
 
 ## License
-
+Copyright &copy 2011-2013 Ryan Crum, Justin Tirrell and Renaud Tircher.
 Distributed under the Eclipse Public License. See LICENSE.
