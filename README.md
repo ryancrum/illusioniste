@@ -23,5 +23,5 @@ Add The following to your project.clj
 * Support more than simple convert calls (composite, etc.)
 
 ## License
-Copyright &copy 2011-2013 Ryan Crum, Justin Tirrell and Renaud Tircher.
+Copyright &copy; 2011-2013 Ryan Crum, Justin Tirrell and Renaud Tircher.
 Distributed under the Eclipse Public License. See LICENSE.
